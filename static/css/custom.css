@@ -13,3 +13,22 @@
   --ct-code-font-family: "Envy Code R";
 }
 */
+
+.CodeMirror-scroll {
+  padding-bottom: 48px;
+  padding-top: 0;
+  overflow-y: hidden !important;
+}
+.CodeMirror-hscrollbar::-webkit-scrollbar {height: 4px;}
+.CodeMirror-vscrollbar::-webkit-scrollbar {display: none;}
+
+/* language marker */
+.extensions__code-lang {
+  background: var(--ls-secondary-background-color); /* change this color if it doesn't fit your theme */
+  opacity: 100%;
+  margin-top: 2px; /* change this number if it doesn't fit your theme */
+  z-index: 99;
+}
+.extensions__code-lang:hover {
+  opacity: 0;
+}
